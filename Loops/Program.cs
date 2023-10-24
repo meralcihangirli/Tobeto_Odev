@@ -32,16 +32,27 @@ namespace Loops
 
 
             //WhileLoop();
-            int number = 10;
-            do
+            //int number = 10;
+            //do
+            //{
+            //    Console.WriteLine(number);
+            //    number--;
+            //} while (number >= 11);
+            //Console.ReadLine();
+
+
+
+            //DoWhileLoop();
+            string[] students = new string[3] { "Engin", "Derin", "Salih" };
+            foreach (var student in students)
             {
-                Console.WriteLine(number);
-                number--;
-            } while (number >= 11);
+                Console.WriteLine(student);
+            }
+
             Console.ReadLine();
 
-
         }
+
 
         //private static void ForLoop()
         //{
@@ -52,15 +63,27 @@ namespace Loops
         //    Console.WriteLine("Finished!");
         //}
 
-        private static void WhileLoop()
+        //private static void WhileLoop()
+        //{
+        //    int number = 100;
+        //    while (number >= 0)
+        //    {
+        //        Console.WriteLine(number);
+        //        number--;
+        //    }
+        //}
+
+        private static void DoWhileLoop()
         {
-            int number = 100;
-            while (number >= 0)
+            int number = 10;
+            do
             {
                 Console.WriteLine(number);
                 number--;
-            }
+            } while (number >= 11);
         }
+
+
 
 
 

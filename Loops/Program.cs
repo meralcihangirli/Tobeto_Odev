@@ -43,12 +43,21 @@ namespace Loops
 
 
             //DoWhileLoop();
-            string[] students = new string[3] { "Engin", "Derin", "Salih" };
-            foreach (var student in students)
-            {
-                Console.WriteLine(student);
-            }
+            //string[] students = new string[3] { "Engin", "Derin", "Salih" };
+            //foreach (var student in students)
+            //{
+            //    Console.WriteLine(student);
+            //}
+            //Console.ReadLine();
 
+            if (IsPrimeNumber (7))
+            {
+                Console.WriteLine("This is a prime number");
+            }
+            else
+            {
+                Console.WriteLine("This is not a prime number");
+            }
             Console.ReadLine();
 
         }
@@ -73,15 +82,30 @@ namespace Loops
         //    }
         //}
 
-        private static void DoWhileLoop()
+        //private static void DoWhileLoop()
+        //{
+        //    int number = 10;
+        //    do
+        //    {
+        //        Console.WriteLine(number);
+        //        number--;
+        //    } while (number >= 11);
+        //}
+
+        private static bool IsPrimeNumber(int number)
         {
-            int number = 10;
-            do
+            bool result = true;
+            for (int i = 2; i < number - 1; i++)
             {
-                Console.WriteLine(number);
-                number--;
-            } while (number >= 11);
+                if (number % i == 0)
+                {
+                    result = false;
+                    i = number;
+                }
+            }
+            return result;
         }
+
 
 
 

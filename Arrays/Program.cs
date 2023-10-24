@@ -15,7 +15,8 @@ namespace Arrays
             //string student2 = "Derin";
             //string student3 = "Salih";
 
-            //arraylar; tek bir noktadan aynı tip değişkenleri yönetebiliriz.
+            //arraylar; tek bir noktadan aynı tip değişkenleri yönetebiliriz.Array kullanılmadıgında üstteki string ifadeler gibi tek tek tanımlama ile uğrasılacaktır.
+            // [] --> tek boyutlu array simgesi
 
             //array kullanımı 4
             string[] students = new string[3] { "Engin", "Derin", "Salih" };

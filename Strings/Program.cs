@@ -40,7 +40,7 @@ namespace Strings
             var result9 = sentence.Substring(3,4);
             var result10=sentence.ToLower();
             var result11=sentence.ToUpper();
-            var result12=sentence.Replace("","-");
+            var result12=sentence.Replace("","-"); 
             //var result13 = sentence.Remove(2);
             var result13 = sentence.Remove(2,5);
 

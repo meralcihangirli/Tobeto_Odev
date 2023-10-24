@@ -35,6 +35,7 @@ namespace TypesAndVariables
 
 
             Console.ReadLine();
+            Console.WriteLine();
         }
     }
 

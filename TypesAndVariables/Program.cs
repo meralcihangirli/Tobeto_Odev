@@ -13,6 +13,7 @@ namespace TypesAndVariables
             //Value Types
             //Console.WriteLine("Hello World!");
             double number5 = 10.4;
+            decimal number6 = 10; // ondalıklı kullanılırsa 10,4m ya da 10,4M
             char character = 'A';
             bool condition = false;
             byte number4 = 255;

@@ -14,7 +14,7 @@ namespace Methods
             Add();
             Add();
             Add();
-            var result=Add2(20,30);    
+            var result=Add2();    
             Console.WriteLine(result);
             Console.ReadLine();
         }
@@ -24,7 +24,8 @@ namespace Methods
             Console.WriteLine("Added!!!");
         }
 
-        static int Add2(int number1, int number2)
+        //default deger ataması en sonda olur ama 2den fazlaysa en sagda olandan itibaren sola dogru degerleri atayabilirsin 
+        static int Add2(int number1=20, int number2=30)
         {
             var result = number1 + number2;
             return result;

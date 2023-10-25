@@ -16,14 +16,17 @@ namespace Methods
             //Add();
             //var result = Add2();
 
-            int number1 = 20;
-            //int number1; -- out keyword için number1 degerinin metot dısında tanımlı olmaması gerekiyor
-            int number2 = 100;
-            var result2 = Add3(out number1, number2);
+            //int number1 = 20;
+            ////int number1; -- out keyword için number1 degerinin metot dısında tanımlı olmaması gerekiyor
+            //int number2 = 100;
+            //var result2 = Add3(out number1, number2);
 
-            //Console.WriteLine(result);
-            Console.WriteLine(result2);
-            Console.WriteLine(number1);
+            ////Console.WriteLine(result);
+            //Console.WriteLine(result2);
+            //Console.WriteLine(number1);
+
+            Console.WriteLine(Multiply(2, 4));
+            Console.WriteLine(Multiply(2, 4, 5));
             Console.ReadLine();
         }
         //don't repeat yourself!--> metotların kullanım amaclarından biri kod tekrarına düşmemektir
@@ -48,6 +51,18 @@ namespace Methods
             number1 = 30;
             return number1 + number2;
         }
+
+        //method overload; methodlara parametreleri farklı oldugu sürece aynı isimler verilebilir ancak bu işlemde methodlar overload edilmis olur
+        static int Multiply(int number1, int number2)
+        {
+            return number1 * number2;
+        }
+
+        static int Multiply(int number1, int number2, int number3)
+        {
+            return number1 * number2 * number3;
+        }
+
     }
 
 }

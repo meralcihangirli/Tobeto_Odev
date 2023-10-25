@@ -27,6 +27,7 @@ namespace Methods
 
             Console.WriteLine(Multiply(2, 4));
             Console.WriteLine(Multiply(2, 4, 5));
+            Console.WriteLine(Add4(1, 2, 3, 4, 5, 6));
             Console.ReadLine();
         }
         //don't repeat yourself!--> metotların kullanım amaclarından biri kod tekrarına düşmemektir
@@ -61,6 +62,12 @@ namespace Methods
         static int Multiply(int number1, int number2, int number3)
         {
             return number1 * number2 * number3;
+        }
+
+        //params keyword; methoda aynı tipte dileğimiz kadar parametre gönderebiliriz.Method parametlerini yazarken en sonda kullanılmak zorundadır.
+        static int Add4(int number, params int[] numbers)
+        {
+            return numbers.Sum();
         }
 
     }

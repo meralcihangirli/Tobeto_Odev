@@ -7,6 +7,7 @@ using System.Threading.Tasks;
 namespace Inheritance
 {
     internal class Program
+
     {
         static void Main(string[] args)
         {
@@ -47,5 +48,5 @@ namespace Inheritance
         public string Department { get; set; }
     }
 
-
+    //interface ile inheritance arasındaki fark; interfaceler inheritance olmasa da inheritence yerine kullanılabilmekte.Abstrack sınıflar inheritence kullanımında önemli bir yere sahip
 }

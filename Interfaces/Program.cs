@@ -22,9 +22,20 @@ namespace Interfaces
 
             //InterfacesIntro();
 
-            CustomerManager customerManager = new CustomerManager();
-            customerManager.Add(new SqlServerCustomerDal());
-            customerManager.Add(new OracleCustomerDal());
+            // Demo();
+
+            ICustomerDal[] customerDals = new ICustomerDal[3]
+            {
+                new SqlServerCustomerDal(),
+                new OracleCustomerDal(),
+                new MySqlCustomerDal(),
+
+            };
+
+            foreach (var customerDal in customerDals)
+            {
+                customerDal.Add();
+            }
 
 
             //manager.Add(new Customer
@@ -38,6 +49,13 @@ namespace Interfaces
             Console.ReadLine();
         }
 
+        private static void Demo()
+        {
+            CustomerManager customerManager = new CustomerManager();
+            //customerManager.Add(new SqlServerCustomerDal());
+            customerManager.Add(new OracleCustomerDal());
+        }
+
         private static void InterfacesIntro()
         {
             Student student = new Student
@@ -49,8 +67,8 @@ namespace Interfaces
             };
 
 
-            manager.Add(customer);
-            manager.Add(student);
+            //manager.Add(customer);
+            //manager.Add(student);
         }
     }
 

@@ -10,15 +10,36 @@ namespace Interfaces
     {
         static void Main(string[] args)
         {
-            PersonManager manager = new PersonManager();
-            Customer customer = new Customer
-            {
-                Id = 1,
-                FirstName = "Engin",
-                LastName = "Demiroğ",
-                Adress = "Ankara",
-            };
+            //PersonManager manager = new PersonManager();
+            //Customer customer = new Customer
+            //{
+            //    Id = 1,
+            //    FirstName = "Engin",
+            //    LastName = "Demiroğ",
+            //    Adress = "Ankara",
+            //};
 
+
+            //InterfacesIntro();
+
+            CustomerManager customerManager = new CustomerManager();
+            customerManager.Add(new SqlServerCustomerDal());
+            customerManager.Add(new OracleCustomerDal());
+
+
+            //manager.Add(new Customer
+            //{
+            //    Id = 1,
+            //    FirstName = "Engin",
+            //    LastName = "Demiroğ",
+            //    Adress = "Ankara",
+            //});
+
+            Console.ReadLine();
+        }
+
+        private static void InterfacesIntro()
+        {
             Student student = new Student
             {
                 Id = 1,
@@ -30,17 +51,6 @@ namespace Interfaces
 
             manager.Add(customer);
             manager.Add(student);
-         
-
-            //manager.Add(new Customer
-            //{
-            //    Id = 1,
-            //    FirstName = "Engin",
-            //    LastName = "Demiroğ",
-            //    Adress = "Ankara",
-            //});
-
-            Console.ReadLine();
         }
     }
 
